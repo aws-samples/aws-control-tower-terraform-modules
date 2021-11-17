@@ -38,13 +38,13 @@ A dedicated account (Network) is created in the Shared Services OU to host the s
 
 A Transit Gateway is created in the Network account and is shared with the 'Prod' and 'Sandbox' OUs via AWS Resource Access Manager (RAM) so that the VPCs created in the accounts within those OUs can be attached to the Transit Gateway. A Transit Gateway route table is created for each OU and all the VPC attachments part of that OU are associated with that route table. The route tables are propagated with the VPC CIDRs such that any VPCs part of the 'Prod' OU can communicated with the Outbound VPC and Sandbox VPC but the VPCs within the 'Prod' OU can't communicate with each other. In addition, a VPN is created and attached to the Transit Gateway to establish communication with the on-premise network.
 
-![Transit Gateway](images/drawio_Network Architecture.png)
+![Transit Gateway](images/drawio_Network-Architecture.png)
 
 #### VPC
 
 A VPC with a pair of subnets (App and DB subnet) across 3 AZs (6 subnets in total) is created in each accounts part of the 'Prod' and 'Sandbox' OUs. For the Outbound VPC, a public and a private subnet is created across 2 AZs (4 subnets in total). All the VPCs are attached to the Transit Gateway.
 
-![VPC](images/drawio_Baseline VPC.png)
+![VPC](images/drawio_Baseline-VPC.png)
 
 ## Security
 
