@@ -1,4 +1,4 @@
-## Terraform Artifact
+### Terraform Artifact
 
 ### Instructions
 The code should be deployed for each account in the below order:
@@ -32,7 +32,7 @@ https://aws.amazon.com/blogs/security/how-to-import-aws-config-rules-evaluations
 
 ### Networking
 
-A dedicated account (Network) is created in the Shared Services OU to host the shared resources such as Transit Gateway, VPN, Outbound VPC and Shared Services VPC (optional). 
+A dedicated account (Network) is created in the Shared Services OU to host the shared resources such as Transit Gateway, VPN, Outbound VPC and Shared Services VPC (optional).
 
 #### Transit Gateway
 
@@ -53,4 +53,3 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 ## License
 
 This library is licensed under the MIT-0 License. See the LICENSE file.
-
