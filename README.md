@@ -16,7 +16,7 @@ Note: Teardown via Terraform should also follow an order as member accounts need
 The architecture diagrams (with .png extension) are included in the images folder for editing with [draw io](https://www.diagrams.net/) software.
 
 
-### Security Hub, Guard Duty & HIPAA
+### Security Hub, Guard Duty & sample conformance pack
 
 Installing this customization will enable Security Hub & Guard Duty in all Control Tower managed accounts, with the Security account acting as the default Security Hub & Guard Duty Master. It also deploys HIPAA conformance pack in some of the accounts which consist of health information.
 Security Hub & Guard Duty are regional services. The region selected for this deployment is us-east-1. Order of execution is important for this Terraform deployment. Both Security Hub & Guard Duty send out invites to all the member accounts (including the management account) in the control tower. All the accounts accept this invite via Terraform accepter. HIPAA conformance pack is the part of the config module deployed only in the test, development, production, log-archive, network & sandbox accounts.
