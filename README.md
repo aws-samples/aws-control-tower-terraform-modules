@@ -1,6 +1,6 @@
 ### Terraform Artifact
 
-## Instructions
+### Instructions
 The code should be deployed for each account in the below order:
 
 1.	Security
